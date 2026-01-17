@@ -1,0 +1,23 @@
+body {
+scroll-behavior: smooth;
+}
+
+
+.hero {
+height: 100vh;
+background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+}
+
+
+.animate {
+opacity: 0;
+transform: translateY(30px);
+transition: all 0.8s ease;
+}
+
+
+.animate.show {
+opacity: 1;
+transform: translateY(0);
+}
