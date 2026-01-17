@@ -1,30 +1,59 @@
 body {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
-.hero {
-height: 100vh;
-background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-url('https://via.placeholder.com/1600x900') center/cover no-repeat;
-}
-
-
-.animate {
-opacity: 0;
-transform: translateY(30px);
-transition: all 0.8s ease;
-}
-
-
-.animate.show {
-opacity: 1;
-transform: translateY(0);
-}
-
+/* HERO */
 .hero {
   height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url('main.png') center / cover no-repeat;
+}
+
+.hero .lead {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+/* ANIMATIONS */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* NAVBAR */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  position: relative;
+  margin-left: 10px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffc107;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
