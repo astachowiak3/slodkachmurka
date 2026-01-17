@@ -1,12 +1,3 @@
-# 🍰 SweetCloud – Cukiernia Internetowa
-
-Poniżej znajdziesz komplet plików do wrzucenia na **GitHub Pages**. Strona korzysta z **Bootstrap 5 (CDN)**, animacji w **JavaScript**, Google Maps oraz placeholderów na zdjęcia.
-
----
-
-## 📄 index.html
-
-```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -56,7 +47,7 @@ Poniżej znajdziesz komplet plików do wrzucenia na **GitHub Pages**. Strona kor
   <div class="row g-4">
     <div class="col-md-4">
       <div class="card shadow animate">
-        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Torty">
+        <img src="tort.jpg" class="card-img-top" alt="Torty">
         <div class="card-body">
           <h5 class="card-title">Torty artystyczne</h5>
           <p class="card-text">Na wesela, urodziny i wyjątkowe okazje.</p>
@@ -65,7 +56,7 @@ Poniżej znajdziesz komplet plików do wrzucenia na **GitHub Pages**. Strona kor
     </div>
     <div class="col-md-4">
       <div class="card shadow animate">
-        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Ciasta">
+        <img src="ciasto.jpg" class="card-img-top" alt="Ciasta">
         <div class="card-body">
           <h5 class="card-title">Ciasta domowe</h5>
           <p class="card-text">Serniki, szarlotki i klasyczne wypieki.</p>
@@ -74,7 +65,7 @@ Poniżej znajdziesz komplet plików do wrzucenia na **GitHub Pages**. Strona kor
     </div>
     <div class="col-md-4">
       <div class="card shadow animate">
-        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Kawiarnia">
+        <img src="kawiarnia.jpg" class="card-img-top" alt="Kawiarnia">
         <div class="card-body">
           <h5 class="card-title">Kawiarnia</h5>
           <p class="card-text">Kawa speciality i świeże desery.</p>
@@ -138,56 +129,11 @@ Poniżej znajdziesz komplet plików do wrzucenia na **GitHub Pages**. Strona kor
   © 2026 SweetCloud
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Custom JS -->
 <script src="script.js"></script>
 </body>
 </html>
-```
 
----
 
-## 🎨 styles.css
-
-```css
-body {
-  scroll-behavior: smooth;
-}
-
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-              url('https://via.placeholder.com/1600x900') center/cover no-repeat;
-}
-
-.animate {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
-}
-
-.animate.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-```
-
----
-
-## ✨ script.js (animacje JS)
-
-```javascript
-const animatedElements = document.querySelectorAll('.animate');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
-
-animatedElements.forEach(el => observer.observe(el));
 
