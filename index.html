@@ -1,0 +1,193 @@
+# 🍰 SweetCloud – Cukiernia Internetowa
+
+Poniżej znajdziesz komplet plików do wrzucenia na **GitHub Pages**. Strona korzysta z **Bootstrap 5 (CDN)**, animacji w **JavaScript**, Google Maps oraz placeholderów na zdjęcia.
+
+---
+
+## 📄 index.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SweetCloud – Cukiernia Internetowa</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">🍰 SweetCloud</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link" href="#offer">Oferta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Cennik</a></li>
+        <li class="nav-item"><a class="nav-link" href="#map">Dojazd</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero d-flex align-items-center">
+  <div class="container text-center text-white">
+    <h1 class="display-4 animate">SweetCloud</h1>
+    <p class="lead">Rzemieślnicze wypieki, które rozpływają się w ustach</p>
+    <a href="#offer" class="btn btn-lg btn-warning mt-3">Zobacz ofertę</a>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section id="offer" class="container py-5">
+  <h2 class="text-center mb-4">🍩 Nasza oferta</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card shadow animate">
+        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Torty">
+        <div class="card-body">
+          <h5 class="card-title">Torty artystyczne</h5>
+          <p class="card-text">Na wesela, urodziny i wyjątkowe okazje.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow animate">
+        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Ciasta">
+        <div class="card-body">
+          <h5 class="card-title">Ciasta domowe</h5>
+          <p class="card-text">Serniki, szarlotki i klasyczne wypieki.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow animate">
+        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Kawiarnia">
+        <div class="card-body">
+          <h5 class="card-title">Kawiarnia</h5>
+          <p class="card-text">Kawa speciality i świeże desery.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CENNIK -->
+<section id="pricing" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">💰 Cennik</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Cukiernia</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Tort klasyczny – od 120 zł</li>
+          <li class="list-group-item">Tort artystyczny – od 200 zł</li>
+          <li class="list-group-item">Ciasto – od 45 zł</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4>Kawiarnia</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Espresso – 10 zł</li>
+          <li class="list-group-item">Cappuccino – 14 zł</li>
+          <li class="list-group-item">Deser dnia – 18 zł</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section id="map" class="container py-5">
+  <h2 class="text-center mb-4">📍 Jak do nas trafić</h2>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.google.com/maps?q=Warszawa&output=embed" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="contact" class="bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">📞 Kontakt</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <input class="form-control mb-3" placeholder="Imię">
+          <input class="form-control mb-3" placeholder="Email">
+          <textarea class="form-control mb-3" rows="4" placeholder="Wiadomość"></textarea>
+          <button class="btn btn-warning w-100">Wyślij</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-3 bg-black text-white">
+  © 2026 SweetCloud
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## 🎨 styles.css
+
+```css
+body {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+              url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+```
+
+---
+
+## ✨ script.js (animacje JS)
+
+```javascript
+const animatedElements = document.querySelectorAll('.animate');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+animatedElements.forEach(el => observer.observe(el));
+
