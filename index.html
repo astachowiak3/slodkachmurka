@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
 
@@ -22,7 +23,6 @@
         <li class="nav-item"><a class="nav-link" href="#home">Strona główna</a></li>
         <li class="nav-item"><a class="nav-link" href="#offer">Oferta</a></li>
         <li class="nav-item"><a class="nav-link" href="#pricing">Cennik</a></li>
-        <li class="nav-item"><a class="nav-link" href="#map">Dojazd</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
       </ul>
     </div>
@@ -44,8 +44,7 @@
         <img src="tort.jpg" class="card-img-top" alt="Torty">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">Torty artystyczne</h5>
-          <p class="card-text flex-grow-1">Tworzymy niepowtarzalne torty na wesela, urodziny i wyjątkowe okazje. Każdy projekt to małe dzieło sztuki.</p>
-          <a href="#contact" class="btn btn-outline-warning mt-3">Zamów teraz</a>
+          <p class="card-text flex-grow-1">Na wesela, urodziny i wyjątkowe okazje.</p>
         </div>
       </div>
     </div>
@@ -55,8 +54,7 @@
         <img src="ciasto.jpg" class="card-img-top" alt="Ciasta">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">Ciasta domowe</h5>
-          <p class="card-text flex-grow-1">Tradycyjne receptury: puszyste serniki, chrupiące szarlotki i klasyczne wypieki jak u babci.</p>
-          <a href="#contact" class="btn btn-outline-warning mt-3">Zamów teraz</a>
+          <p class="card-text flex-grow-1">Serniki, szarlotki i klasyczne wypieki.</p>
         </div>
       </div>
     </div>
@@ -66,8 +64,7 @@
         <img src="kawiarnia.jpg" class="card-img-top" alt="Kawiarnia">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">Kawiarnia</h5>
-          <p class="card-text flex-grow-1">Odwiedź nas stacjonarnie. Serwujemy kawę speciality, świeże desery i atmosferę pełną słodyczy.</p>
-          <a href="#map" class="btn btn-outline-warning mt-3">Sprawdź lokalizację</a>
+          <p class="card-text flex-grow-1">Kawa speciality i świeże desery.</p>
         </div>
       </div>
     </div>
@@ -77,38 +74,64 @@
 <section id="pricing" class="bg-light py-5">
   <div class="container">
     <h2 class="text-center mb-5">💰 Cennik</h2>
-    <div class="row g-4 justify-content-center">
+    <div class="row justify-content-center g-4">
       
-      <div class="col-md-5">
-        <div class="card pricing-card text-center h-100 border-0 shadow-lg animate">
-          <div class="card-header bg-warning text-white py-3">
-            <h4 class="m-0">Cukiernia</h4>
+      <div class="col-lg-5 col-md-6">
+        <div class="pricing-card shadow animate">
+          <div class="pricing-header bg-warning">
+            <h3>Cukiernia</h3>
+            <p>Słodkości na zamówienie</p>
           </div>
-          <div class="card-body">
-            <ul class="list-unstyled mt-3 mb-4">
-              <li class="py-2 border-bottom">Tort klasyczny <span class="fw-bold text-warning">od 120 zł</span></li>
-              <li class="py-2 border-bottom">Tort artystyczny <span class="fw-bold text-warning">od 200 zł</span></li>
-              <li class="py-2 border-bottom">Ciasto (blacha) <span class="fw-bold text-warning">od 100 zł</span></li>
-              <li class="py-2 border-bottom">Babeczki (sztuka) <span class="fw-bold text-warning">12 zł</span></li>
-              <li class="py-2">Makaroniki (zestaw) <span class="fw-bold text-warning">45 zł</span></li>
+          <div class="pricing-body">
+            <ul class="list-unstyled">
+              <li>
+                <span>Tort klasyczny</span>
+                <span class="price">od 120 zł</span>
+              </li>
+              <li>
+                <span>Tort artystyczny</span>
+                <span class="price">od 200 zł</span>
+              </li>
+              <li>
+                <span>Ciasto (blacha)</span>
+                <span class="price">od 100 zł</span>
+              </li>
+               <li>
+                <span>Babeczki (sztuka)</span>
+                <span class="price">12 zł</span>
+              </li>
             </ul>
+            <a href="#contact" class="btn btn-outline-dark mt-3 w-100">Zamów teraz</a>
           </div>
         </div>
       </div>
 
-      <div class="col-md-5">
-        <div class="card pricing-card text-center h-100 border-0 shadow-lg animate">
-          <div class="card-header bg-dark text-white py-3">
-            <h4 class="m-0">Kawiarnia</h4>
+      <div class="col-lg-5 col-md-6">
+        <div class="pricing-card shadow animate dark-theme">
+          <div class="pricing-header bg-dark text-white">
+            <h3>Kawiarnia</h3>
+            <p>Menu na miejscu</p>
           </div>
-          <div class="card-body">
-            <ul class="list-unstyled mt-3 mb-4">
-              <li class="py-2 border-bottom">Espresso <span class="fw-bold text-dark">10 zł</span></li>
-              <li class="py-2 border-bottom">Cappuccino <span class="fw-bold text-dark">14 zł</span></li>
-              <li class="py-2 border-bottom">Latte Macchiato <span class="fw-bold text-dark">16 zł</span></li>
-              <li class="py-2 border-bottom">Deser dnia <span class="fw-bold text-dark">18 zł</span></li>
-              <li class="py-2">Herbata zimowa <span class="fw-bold text-dark">15 zł</span></li>
+          <div class="pricing-body">
+            <ul class="list-unstyled">
+              <li>
+                <span>Espresso</span>
+                <span class="price">10 zł</span>
+              </li>
+              <li>
+                <span>Cappuccino</span>
+                <span class="price">14 zł</span>
+              </li>
+              <li>
+                <span>Latte Macchiato</span>
+                <span class="price">16 zł</span>
+              </li>
+              <li>
+                <span>Deser dnia</span>
+                <span class="price">18 zł</span>
+              </li>
             </ul>
+            <a href="#contact" class="btn btn-outline-warning mt-3 w-100">Zobacz lokalizację</a>
           </div>
         </div>
       </div>
@@ -117,66 +140,48 @@
   </div>
 </section>
 
-<section id="map" class="container py-5">
-  <h2 class="text-center mb-4">📍 Jak do nas trafić</h2>
-  <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
-    <iframe
-      src="https://www.google.com/maps?q=ul.%20Półwiejska%2012%20Poznań&output=embed"
-      loading="lazy"
-      style="border:0;">
-    </iframe>
-  </div>
-</section>
+<section id="contact" class="py-0">
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      
+      <div class="col-lg-6 map-container">
+        <iframe 
+          src="https://www.google.com/maps?q=ul.%20Półwiejska%2012%20Poznań&output=embed" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5 text-white">📞 Skontaktuj się z nami</h2>
-    
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="card shadow-lg border-0 overflow-hidden">
-          <div class="row g-0">
-            <div class="col-md-5 bg-warning text-dark p-5 d-flex flex-column justify-content-center">
-              <h3 class="mb-4">Dane kontaktowe</h3>
-              <p class="mb-3">
-                <strong>📍 Adres:</strong><br>
-                ul. Półwiejska 12<br>
-                61-888 Poznań
-              </p>
-              <p class="mb-3">
-                <strong>☎️ Telefon:</strong><br>
-                +48 600 123 456
-              </p>
-              <p class="mb-3">
-                <strong>✉️ Email:</strong><br>
-                kontakt@sweetcloud.pl
-              </p>
-              <div class="mt-4">
-                <small>Godziny otwarcia:<br>Pn-Pt: 10:00 - 20:00<br>Sb-Nd: 11:00 - 21:00</small>
+      <div class="col-lg-6 bg-dark text-white p-5 d-flex flex-column justify-content-center">
+        <div class="contact-content animate">
+          <h2 class="mb-4">📞 Kontakt</h2>
+          
+          <div class="mb-5 contact-info">
+            <p><i class="bi bi-geo-alt-fill text-warning me-2"></i> ul. Półwiejska 12, 61-888 Poznań</p>
+            <p><i class="bi bi-telephone-fill text-warning me-2"></i> +48 600 123 456</p>
+            <p><i class="bi bi-envelope-fill text-warning me-2"></i> kontakt@sweetcloud.pl</p>
+          </div>
+
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control bg-secondary text-white border-0 py-2" placeholder="Imię">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control bg-secondary text-white border-0 py-2" placeholder="Email">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control bg-secondary text-white border-0" rows="4" placeholder="Twoja wiadomość..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-warning w-100 py-2 fw-bold">Wyślij wiadomość</button>
               </div>
             </div>
-
-            <div class="col-md-7 bg-white p-5">
-              <h3 class="mb-4 text-dark">Napisz wiadomość</h3>
-              <form>
-                <div class="mb-3">
-                  <label class="form-label text-muted">Twoje Imię</label>
-                  <input type="text" class="form-control form-control-lg bg-light border-0" placeholder="Jan Kowalski">
-                </div>
-                <div class="mb-3">
-                  <label class="form-label text-muted">Adres Email</label>
-                  <input type="email" class="form-control form-control-lg bg-light border-0" placeholder="jan@example.com">
-                </div>
-                <div class="mb-3">
-                  <label class="form-label text-muted">Wiadomość</label>
-                  <textarea class="form-control form-control-lg bg-light border-0" rows="4" placeholder="W czym możemy pomóc?"></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark btn-lg w-100 mt-2">Wyślij wiadomość</button>
-              </form>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
+
     </div>
   </div>
 </section>
